@@ -1,12 +1,12 @@
 
   class Employee{
-    constructor(id,name,surname,active_projects,accounting_type,salary){
+    constructor(id,name,surname,active_projects,accounting_type){
         this.id = id 
         this.name = name 
         this.surname = surname;
         this.active_projects = [] ; 
         this.accounting_type = accounting_type;
-        this.salary = salary;
+        this.salary ;
     }
 
 }
@@ -59,6 +59,11 @@ class Project {
 ////////////////////////////////////////////////////////////////////////////
 emp_last_id = 5 ; // Veri  tabanından çek 
 project_last_id=2 ; //  Veri  tabanından çek 
+
+employees = []
+projects = []
+
+
 document.addEventListener("DOMContentLoaded" ,function() {
     console.log("Veri Tabanından tüm projeler ve  calisanlar cekilmesi lazım LAST ID de çekilecek . ")
 })
@@ -66,38 +71,32 @@ document.addEventListener("DOMContentLoaded" ,function() {
 document.getElementById("addEmployee").addEventListener("click",function(){
     var type = document.getElementById("")
     // Özelliklerini de al . 
-    // var name = document.getElementById().textContent;
-    // var surname = document.getElementById().textContent;
-    // var accounting_type = document.getElementById().textContent;
-    // var salary = document.getElementById().textContent;
-    var name ="Yusuf"
-    var surname  = "Anı"
-    var accounting_type="bir şeyler"
-    var salary = 21312;
+    var name = document.getElementById().textContent;
+    var surname = document.getElementById().textContent;
+    var accounting_type = document.getElementById().textContent;
+    var salary = document.getElementById().textContent;
+    var salary = auto_set_salary()
     switch(type){
         case "Manager" :{
-            emp = new Manager(name,surname,accounting_type,salary);
+            emp = new Manager(name,surname,accounting_type);
         } 
         case "Analyst" :{
-            emp = new Analyst(name,surname,accounting_type,salary);
+            emp = new Analyst(name,surname,accounting_type);
         }
         case "Designer" :{
-            emp = new Designer(name,surname,accounting_type,salary);
+            emp = new Designer(name,surname,accounting_type);
         }
         case "Programmer" :{
-            emp = new Programmer(name,surname,accounting_type,salary);
+            emp = new Programmer(name,surname,accounting_type);
         }
         case "Tester" :{
-            emp = new Tester(name,surname,accounting_type,salary);
+            emp = new Tester(name,surname,accounting_type);
         }
         case "Maintenance_worker" :{
-            emp = new Maintenance_worker(name,surname,accounting_type,salary);
+            emp = new Maintenance_worker(name,surname,accounting_type);
         }
-        
+        employees.push(emp)
     }
-
-
-
 
 })
 
