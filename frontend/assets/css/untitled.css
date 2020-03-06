@@ -1,0 +1,29 @@
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #1cc88a;
+  border-color: #1cc88a;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #1cc88a;
+  border-color: #1cc88a;
+}
+
+.btn-outline-success:not {
+  color: #1cc88a;
+  background-color: #fff;
+  border-color: #1cc88a;
+}
+
+.btn-success:hover {
+  color: #17a673;
+  background-color: #fff;
+  border-color: #17a673;
+}
+
+button, input {
+  overflow: visible;
+  border-color: rgba(153,153,153,0.16);
+}
+

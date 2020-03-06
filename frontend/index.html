@@ -222,7 +222,7 @@
                     <div class="col-lg-5 col-xl-4">
                         <div class="card shadow mb-4">
                             <div class="card-header d-flex justify-content-between align-items-center">
-                                <h6 class="text-primary font-weight-bold m-0">Revenue Sources</h6>
+                                <h6 class="text-primary font-weight-bold m-0">Çalışan Dağılımı</h6>
                                 <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
                                         role="menu">
@@ -231,9 +231,9 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="chart-area"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+                                <div class="chart-area"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Analist&quot;,&quot;Programcı&quot;,&quot;Tasarımcı&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;position&quot;:&quot;bottom&quot;,&quot;reverse&quot;:false},&quot;title&quot;:{&quot;display&quot;:false}}}"></canvas></div>
                                 <div
-                                    class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Direct</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Social</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Refferal</span></div>
+                                    class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>Analist</span><span class="mr-2"><i class="fas fa-circle text-success"></i>Programcı</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Tasarımcı<br></span></div>
                         </div>
                     </div>
                 </div>
@@ -267,26 +267,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-4" style="width: 306px;" href="#addEmployee">
                         <div class="card-header py-3">
                             <h6 class="text-primary font-weight-bold m-0">Çalışan Ekle</h6>
                         </div>
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush" style="width: 304px;">
                             <li class="list-group-item">
                                 <div class="row align-items-center no-gutters">
-                                    <div class="col"><label class="text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70;max-width: 70;width: 70px;">Ad</label><input class="flex-shrink-1" type="text" id="addEmployeeName" style="margin-left: 10px;padding-left: 0px;"></div>
+                                    <div class="col"><label class="text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70;max-width: 70;width: 70px;">Ad</label><input class="border rounded flex-shrink-1" type="text" id="addEmployeeName" style="margin-left: 10px;padding-left: 0px;"></div>
+                                </div>
+                                <div class="row" style="margin-left: 0px;margin-right: 0px;">
+                                    <div class="col" style="padding-right: 0px;padding-left: 0px;"><label class="text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70px;max-width: 70px;">Soyad</label><input class="border rounded" type="text" id="addEmployeeSurname" style="margin-left: 10px;padding-left: 0px;color: #6c6c6c;">
+                                        <label
+                                            class="text-nowrap text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70px;max-width: 70px;">Tecrube( Yıl)</label><input class="border rounded" type="text" id="addExperience" style="margin-left: 10px;padding-left: 0px;color: #6c6c6c;"><label class="text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70px;max-width: 70px;">Tip</label>
+                                            <select
+                                                class="custom-select" id="addEmployeeType" style="padding-left: 0px;padding-bottom: 0px;padding-right: 0px;width: 181px;margin-left: 10px;min-height: none;max-height: none;padding-top: 0px;height: 28px;font-size: 16;">
+                                                <optgroup label="Çalışan tipi seçin">
+                                                    <option value="12">Yönetici</option>
+                                                    <option value="13">Analist</option>
+                                                    <option value="14">Tasarımcı</option>
+                                                    <option value="15">Programcı</option>
+                                                    <option value="16">Testçi</option>
+                                                    <option value="17">Bakım Elemanı</option>
+                                                </optgroup>
+                                                </select><label class="text-nowrap text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70px;max-width: 70px;">Muhasebe&nbsp;</label><select class="custom-select" id="addAccountingType"
+                                                    style="padding-left: 0px;padding-bottom: 0px;padding-right: 0px;width: 181px;margin-left: 10px;min-height: none;max-height: none;padding-top: 0px;height: 28px;font-size: 16;"><option value="">Ünvana göre</option><option value="">Proje Sayısı</option></select></div>
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                <div class="row align-items-center no-gutters">
-                                    <div class="col"><label class="text-left" style="margin-top: 8;font-weight: bold;font-style: normal;min-width: 70px;max-width: 70px;">Soyad</label><input type="text" id="addEmployeeSurname" style="margin-left: 10px;padding-left: 0px;"></div>
+                                <div class="row" style="margin-left: 0;margin-right: 0;">
+                                    <div class="col" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-success btn-block" id="addEmployeeButton" type="button" style="padding-right: 0;padding-left: 0;">Ekle</button>
+                                        <div class="custom-control text-success custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-4"><label class="custom-control-label" for="formCheck-4">Label</label></div>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="list-group-item"><select class="custom-select" id="addEmployeeType"><option value="undefined">Çalışan tipi seçin</option><option value="12">Yönetici</option><option value="13">Analist</option><option value="14">Tasarımcı</option><option value="15">Programcı</option></select></li>
-                            <li
-                                class="list-group-item d-xl-flex"><button class="btn btn-success btn-block" id="addEmployeeButton" type="button">Ekle</button></li>
-                                <br>
-                               <input class="custom-control-input" type="checkbox" id="formCheck-4"><label class="custom-control-label" for="formCheck-4">Label</label>
                         </ul>
                     </div>
                 </div>
@@ -393,8 +407,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="classes.js"></script>
-    <script src="utils.js"></script>
 </body>
 
 </html>
