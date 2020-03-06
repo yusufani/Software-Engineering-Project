@@ -101,32 +101,32 @@ document.getElementById("addEmployee").addEventListener("click",function(){
 
 })
 
-function assign_emp_to_project(employee){
+function assign_emp_to_project(employee){ // Faz
 
 }
-function calculate_compensation(employee){
+function calculate_compensation(employee){ // Yusuf
 
 }
 
-function auto_set_salary(employee){
+function auto_set_salary(employee){ // Faz
 
 }
-function create_project(){
+function create_project(){ // Yusuf 
 
 }
-function load_projects(){
+function load_projects(){ // Aykut
 
 }
-function load_employees(){
+function load_employees(){ // Aykut 
 
 }
-function get_infos(){
+function get_infos(){ // Aykut
     // last idleri ayarla
 }
-function start_project(project){
+function start_project(project){ // Faz
 
 }
 
-function finish_project(project) {
+function finish_project(project) { // Yusuf 
 
 }
