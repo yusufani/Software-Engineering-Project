@@ -130,9 +130,3 @@ function start_project(project){
 function finish_project(project) {
 
 }
-
-function 
-
-
-
-
